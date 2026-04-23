@@ -9,7 +9,7 @@ public class Assertions {
 	public void TestGoogleAssert() throws Exception {
 		
 		WebDriver driver = new ChromeDriver();
-		//Assert basics..
+		//Assert basics...
 		//Other assertions like Assert.assertTrue/False/Null/notNull are popular
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
