@@ -1,0 +1,37 @@
+import org.testng.annotations.Ignore;
+import org.testng.annotations.Test;
+
+public class PriorityFlightBookingExample {
+	@Ignore
+	@Test(priority = 1)
+	public void Signup() {
+		System.out.println("Signup");
+		//@Ignore can be at method level, class level, package level 
+		//(for package level you need to create package-info.java and place the tag there) 
+	}
+
+	@Test(priority = 2)
+	public void Login() {
+		System.out.println("Login");
+	}
+
+	@Test(priority = 3)
+	public void SearchForTheFlight() {
+		System.out.println("SearchForTheFlight");
+	}
+
+	@Test(priority = 4)
+	public void BookTheFlight() {
+		System.out.println("BookTheFlight");
+	}
+
+	@Test(priority = 5)
+	public void SaveTheTicket() {
+		System.out.println("SaveTheTicket");
+	}
+
+	@Test(priority = 6)
+	public void Logout() {
+		System.out.println("Logout");
+	}
+}
