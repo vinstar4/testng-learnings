@@ -7,7 +7,9 @@
     <classes>
       <class name="OrangeHRM">
         <methods>
-          <include name="NavigateToMyInfo"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testAppUrl"/>
         </methods>
       </class> <!-- OrangeHRM -->
     </classes>

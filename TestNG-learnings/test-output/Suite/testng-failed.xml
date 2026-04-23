@@ -16,19 +16,6 @@
       </class> <!-- ParallelTestingDemo -->
     </classes>
   </test> <!-- edgetest(failed) -->
-  <test thread-count="5" parallel="tests" name="chrometest(failed)">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
-    <classes>
-      <class name="ParallelTestingDemo">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="testLogo"/>
-        </methods>
-      </class> <!-- ParallelTestingDemo -->
-    </classes>
-  </test> <!-- chrometest(failed) -->
   <test thread-count="5" parallel="tests" name="firefoxtest(failed)">
     <parameter name="browser" value="firefox"/>
     <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
@@ -36,8 +23,10 @@
       <class name="ParallelTestingDemo">
         <methods>
           <include name="tearDown"/>
+          <include name="testURL"/>
           <include name="setup"/>
           <include name="testLogo"/>
+          <include name="testTitle"/>
         </methods>
       </class> <!-- ParallelTestingDemo -->
     </classes>
