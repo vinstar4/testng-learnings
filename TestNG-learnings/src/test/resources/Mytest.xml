@@ -8,9 +8,8 @@
 		<classes>
 			<class name="OrangeHRM">
 				<methods>
-					<include name="LaunchApp" />
-					<include name="EnterLoginDetails" />
-					<include name="VerifyLogin" />
+					<include name="testLogo" />
+
 				</methods>
 			</class>
 		</classes>
@@ -19,10 +18,8 @@
 		<classes>
 			<class name="OrangeHRM">
 				<methods>
-					<include name="LaunchApp" />
-					<include name="EnterLoginDetails" />
-					<include name="NavigateToMyInfo" />
-					<include name="VerifyMyInfo" />
+					<include name="testAppUrl" />
+
 				</methods>
 			</class>
 		</classes>
