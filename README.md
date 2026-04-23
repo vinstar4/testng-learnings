@@ -174,7 +174,7 @@ project-root
 
 ## Purpose
 
-* Learn TestNG step-by-step
-* Practice real-world testing concepts
-* Maintain structured revision notes
+* Learn TestNG step-by-step.
+* Practice real-world testing concepts.
+* Maintain structured revision notes.
 
