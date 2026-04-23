@@ -1,7 +1,8 @@
 # TestNG Learnings Repository
 
-This repository contains my hands-on learning and practice of **TestNG**,
-a testing framework used for Java-based automation.
+This repository contains my hands-on learning and practice of **TestNG**, a Java-based testing framework used for automation.
+
+---
 
 ## Project Structure
 
@@ -16,73 +17,164 @@ project-root
 │   │   └── resources
 │   │       └── (TestNG XML files)
 │
+├── reports
+│   └── (Extent Report HTML files generated after execution)
+│
 └── README.md
 ```
+
+---
 
 ## Directory Details
 
 ### src/test/java
 
 * Contains all TestNG test classes
-* Includes:
+* Covers:
 
   * Test methods using `@Test`
   * Annotations (`@BeforeMethod`, `@AfterMethod`, etc.)
-  * Listeners
-  * DataProviders
   * Assertions
+  * DataProviders
+  * Listeners
 
 ### src/test/resources
 
-* Contains TestNG XML configuration files
+* Contains TestNG XML files
 * Used for:
 
-  * Running test suites
+  * Suite execution
   * Grouping tests
   * Parallel execution
   * Listener configuration
 
+### reports
+
+* Configured location for **Extent Reports**
+* Stores generated HTML reports after test execution
+
+---
+
 ## Test Execution
 
-### 1. Using TestNG XML (Suite Execution)
+### 1. Direct Execution (Java Files)
 
-* Located in `src/test/resources`
-* Used when:
+* Almost all `.java` test files can be executed directly:
+
+  * Right-click → **Run As → TestNG Test**
+
+#### Exceptions:
+
+* **`MyListener.java`**
+
+  * Listener utility class (not a test)
+  * Used in `listenerbasics.xml`
+  * Can also be used without XML:
+
+    ```java
+    @Listeners(MyListener.class)
+    ```
+
+* **`Extentreportmanager.java`**
+
+  * Listener utility class for Extent Reports
+  * Used in `extentreport.xml`
+  * Can also be used without XML:
+
+    ```java
+    @Listeners(Extentreportmanager.class)
+    ```
+
+* **`ParalleltestingDemo.java`**
+
+  * Executed using:
+
+    ```
+    paralleldemo1.xml
+    ```
+  * Required for demonstrating parallel execution
+
+---
+
+### 2. Execution Using XML Files
+
+* All `.xml` files in:
+
+  ```
+  src/test/resources
+  ```
+
+  can be executed directly:
+
+  * Right-click → **Run As → TestNG Suite**
+
+* Used for:
 
   * Running multiple classes together
-  * Using groups, parallel execution, or listeners
+  * Applying listeners
+  * Parallel execution
+  * Group execution
 
-### 2. Direct Execution (Without XML)
+---
 
-* Some test classes can be run directly from the Java file
-* Right-click class → **Run As → TestNG Test**
+## Extent Reports
 
-**Note:**
+* Extent Reports are configured using a listener:
 
-* Not all test classes require an XML file
-* XML is mainly used for advanced configurations and suite-level control
+  * `Extentreportmanager.java`
+* Reports are generated in:
+
+  ```
+  ./reports
+  ```
+* Output:
+
+  * HTML report with test results
+  * Pass/Fail status
+  * Execution details
+
+---
 
 ## Topics Covered
 
 * TestNG Annotations
-* Execution Flow
+* Test Execution Flow
 * Assertions
 * DataProviders
 * Groups & Prioritization
 * Parallel Testing
 * Listeners
-* Extent Reports
+* Extent Reports Integration
+
+---
 
 ## Tools & Technologies
 
 * Java
 * TestNG
 * Eclipse IDE
-* Maven (simple Maven project and inside it testng practice)
+* Maven (simple Maven project as a container for Testng Practice)
+
+---
+
+## Key Notes
+
+* XML is **not mandatory** for running TestNG tests
+* Most test classes can run directly
+* XML is mainly used for:
+
+  * Advanced configuration
+  * Suite-level execution
+* Listeners can be configured:
+
+  * Via XML
+  * Or using `@Listeners` annotation in Java
+
+---
 
 ## Purpose
 
 * Learn TestNG step-by-step
-* Practice different testing features
+* Practice real-world testing concepts
 * Maintain structured revision notes
 
