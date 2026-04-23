@@ -20,7 +20,7 @@ public class OrangeHRM {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		driver.manage().window().maximize();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 
 	}
 
