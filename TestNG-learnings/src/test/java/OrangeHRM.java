@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-//@Listeners(day46.MyListener.class)
+//@Listeners(MyListener.class)
 public class OrangeHRM {
 
 	WebDriver driver;
