@@ -10,6 +10,7 @@ public class Assertions {
 		
 		WebDriver driver = new ChromeDriver();
 		//Assert basics
+		//Other assertions like Assert.assertTrue/False/Null/notNull are popular
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
 	//	driver.findElement(By.name("q")).sendKeys("Hello Testng", Keys.ENTER);
@@ -17,7 +18,7 @@ public class Assertions {
 		String actualURL= driver.getCurrentUrl();
 		String expectedURL="https://www.gooogle.com";
 		Assert.assertEquals(actualURL, expectedURL,"failed");
-		//Other assertions like Assert.assertTrue/False/Null/notNull are popular
+		//
 		Thread.sleep(1000);
 		driver.quit();
 	}
