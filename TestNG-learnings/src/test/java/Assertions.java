@@ -9,6 +9,7 @@ public class Assertions {
 	public void TestGoogleAssert() throws Exception {
 		
 		WebDriver driver = new ChromeDriver();
+		//Assert basics
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
 	//	driver.findElement(By.name("q")).sendKeys("Hello Testng", Keys.ENTER);
