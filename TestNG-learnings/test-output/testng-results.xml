@@ -1,537 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="3" failed="0" skipped="6">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-23T08:18:29 IST" name="Suite" finished-at="2026-04-23T08:18:39 IST" duration-ms="9920">
+  <suite started-at="2026-04-23T08:40:24 IST" name="SuiteListen" finished-at="2026-04-23T08:40:34 IST" duration-ms="9579">
     <groups>
     </groups>
-    <test started-at="2026-04-23T08:18:29 IST" name="edgetest" finished-at="2026-04-23T08:18:30 IST" duration-ms="664">
-      <class name="ParallelTestingDemo">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:ParallelTestingDemo@7d8704ef]" started-at="2026-04-23T08:18:29 IST" name="setup" finished-at="2026-04-23T08:18:30 IST" duration-ms="587" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
-            <message>
-              <![CDATA[Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: EdgeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: EdgeDriver
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
-at ParallelTestingDemo.setup(ParallelTestingDemo.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: EdgeDriver
-at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:153)
-at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:228)
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:102)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+    <test started-at="2026-04-23T08:40:24 IST" name="Test" finished-at="2026-04-23T08:40:34 IST" duration-ms="9579">
+      <class name="OrangeHRM">
+        <test-method is-config="true" signature="setup()[pri:0, instance:OrangeHRM@74e52ef6]" started-at="2026-04-23T08:40:24 IST" name="setup" finished-at="2026-04-23T08:40:33 IST" duration-ms="8934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:ParallelTestingDemo@7d8704ef]" started-at="2026-04-23T08:18:30 IST" name="testLogo" finished-at="2026-04-23T08:18:30 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
-            <message>
-              <![CDATA[Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: EdgeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: EdgeDriver
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
-at ParallelTestingDemo.setup(ParallelTestingDemo.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: EdgeDriver
-at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:153)
-at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:228)
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:102)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+        <test-method signature="testLogo()[pri:1, instance:OrangeHRM@74e52ef6]" started-at="2026-04-23T08:40:33 IST" name="testLogo" finished-at="2026-04-23T08:40:33 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogo -->
-        <test-method signature="testTitle()[pri:2, instance:ParallelTestingDemo@7d8704ef]" started-at="2026-04-23T08:18:30 IST" name="testTitle" finished-at="2026-04-23T08:18:30 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+        <test-method signature="testAppUrl()[pri:2, instance:OrangeHRM@74e52ef6]" started-at="2026-04-23T08:40:33 IST" name="testAppUrl" finished-at="2026-04-23T08:40:33 IST" duration-ms="26" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: EdgeDriver]]>
+              <![CDATA[expected [https://opensource-demo.orangehrmlive.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: EdgeDriver
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
-at ParallelTestingDemo.setup(ParallelTestingDemo.java:28)
+              <![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at OrangeHRM.testAppUrl(OrangeHRM.java:35)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: EdgeDriver
-at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:153)
-at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:228)
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:102)
-... 25 more
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTitle -->
-        <test-method signature="testURL()[pri:3, instance:ParallelTestingDemo@7d8704ef]" started-at="2026-04-23T08:18:30 IST" name="testURL" finished-at="2026-04-23T08:18:30 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+        </test-method> <!-- testAppUrl -->
+        <test-method signature="testHomePageTitle()[pri:3, instance:OrangeHRM@74e52ef6]" started-at="2026-04-23T08:40:33 IST" name="testHomePageTitle" finished-at="2026-04-23T08:40:33 IST" depends-on-methods="OrangeHRM.testAppUrl" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: EdgeDriver]]>
+              <![CDATA[Method OrangeHRM.testHomePageTitle() on instance OrangeHRM@74e52ef6 depends on not successfully finished methods 
+[OrangeHRM.testAppUrl() on instance OrangeHRM@74e52ef6]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: EdgeDriver
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
-at ParallelTestingDemo.setup(ParallelTestingDemo.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+              <![CDATA[java.lang.Throwable: Method OrangeHRM.testHomePageTitle() on instance OrangeHRM@74e52ef6 depends on not successfully finished methods 
+[OrangeHRM.testAppUrl() on instance OrangeHRM@74e52ef6]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_147_WINDOWS)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: EdgeDriver
-at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:153)
-at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:228)
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:102)
-... 25 more
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testURL -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelTestingDemo@7d8704ef]" started-at="2026-04-23T08:18:30 IST" name="tearDown" finished-at="2026-04-23T08:18:30 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- testHomePageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:OrangeHRM@74e52ef6]" started-at="2026-04-23T08:40:33 IST" name="tearDown" finished-at="2026-04-23T08:40:34 IST" duration-ms="229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ParallelTestingDemo -->
-    </test> <!-- edgetest -->
-    <test started-at="2026-04-23T08:18:29 IST" name="firefoxtest" finished-at="2026-04-23T08:18:38 IST" duration-ms="9112">
-      <class name="ParallelTestingDemo">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:ParallelTestingDemo@158a8276]" started-at="2026-04-23T08:18:29 IST" name="setup" finished-at="2026-04-23T08:18:38 IST" duration-ms="9035" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[WebDriver session does not exist, or is not active
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [82830ce3-4d89-43b1-8c24-c5e31e76d04f, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22412, moz:profile: C:\Users\vinay\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 82830ce3-4d89-43b1-8c24-c5e31e76d04f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: WebDriver session does not exist, or is not active
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [82830ce3-4d89-43b1-8c24-c5e31e76d04f, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22412, moz:profile: C:\Users\vinay\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 82830ce3-4d89-43b1-8c24-c5e31e76d04f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1034)
-at ParallelTestingDemo.setup(ParallelTestingDemo.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:ParallelTestingDemo@158a8276]" started-at="2026-04-23T08:18:38 IST" name="testLogo" finished-at="2026-04-23T08:18:38 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[WebDriver session does not exist, or is not active
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [82830ce3-4d89-43b1-8c24-c5e31e76d04f, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22412, moz:profile: C:\Users\vinay\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 82830ce3-4d89-43b1-8c24-c5e31e76d04f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: WebDriver session does not exist, or is not active
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [82830ce3-4d89-43b1-8c24-c5e31e76d04f, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22412, moz:profile: C:\Users\vinay\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 82830ce3-4d89-43b1-8c24-c5e31e76d04f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1034)
-at ParallelTestingDemo.setup(ParallelTestingDemo.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="testTitle()[pri:2, instance:ParallelTestingDemo@158a8276]" started-at="2026-04-23T08:18:38 IST" name="testTitle" finished-at="2026-04-23T08:18:38 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[WebDriver session does not exist, or is not active
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [82830ce3-4d89-43b1-8c24-c5e31e76d04f, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22412, moz:profile: C:\Users\vinay\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 82830ce3-4d89-43b1-8c24-c5e31e76d04f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: WebDriver session does not exist, or is not active
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [82830ce3-4d89-43b1-8c24-c5e31e76d04f, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22412, moz:profile: C:\Users\vinay\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 82830ce3-4d89-43b1-8c24-c5e31e76d04f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1034)
-at ParallelTestingDemo.setup(ParallelTestingDemo.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTitle -->
-        <test-method signature="testURL()[pri:3, instance:ParallelTestingDemo@158a8276]" started-at="2026-04-23T08:18:38 IST" name="testURL" finished-at="2026-04-23T08:18:38 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[WebDriver session does not exist, or is not active
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [82830ce3-4d89-43b1-8c24-c5e31e76d04f, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22412, moz:profile: C:\Users\vinay\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 82830ce3-4d89-43b1-8c24-c5e31e76d04f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: WebDriver session does not exist, or is not active
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [82830ce3-4d89-43b1-8c24-c5e31e76d04f, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22412, moz:profile: C:\Users\vinay\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 82830ce3-4d89-43b1-8c24-c5e31e76d04f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1034)
-at ParallelTestingDemo.setup(ParallelTestingDemo.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testURL -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelTestingDemo@158a8276]" started-at="2026-04-23T08:18:38 IST" name="tearDown" finished-at="2026-04-23T08:18:38 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- ParallelTestingDemo -->
-    </test> <!-- firefoxtest -->
-    <test started-at="2026-04-23T08:18:29 IST" name="chrometest" finished-at="2026-04-23T08:18:39 IST" duration-ms="9920">
-      <class name="ParallelTestingDemo">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:ParallelTestingDemo@489115ef]" started-at="2026-04-23T08:18:29 IST" name="setup" finished-at="2026-04-23T08:18:39 IST" duration-ms="9571" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:ParallelTestingDemo@489115ef]" started-at="2026-04-23T08:18:39 IST" name="testLogo" finished-at="2026-04-23T08:18:39 IST" duration-ms="82" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="testTitle()[pri:2, instance:ParallelTestingDemo@489115ef]" started-at="2026-04-23T08:18:39 IST" name="testTitle" finished-at="2026-04-23T08:18:39 IST" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTitle -->
-        <test-method signature="testURL()[pri:3, instance:ParallelTestingDemo@489115ef]" started-at="2026-04-23T08:18:39 IST" name="testURL" finished-at="2026-04-23T08:18:39 IST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testURL -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelTestingDemo@489115ef]" started-at="2026-04-23T08:18:39 IST" name="tearDown" finished-at="2026-04-23T08:18:39 IST" duration-ms="195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- ParallelTestingDemo -->
-    </test> <!-- chrometest -->
-  </suite> <!-- Suite -->
+      </class> <!-- OrangeHRM -->
+    </test> <!-- Test -->
+  </suite> <!-- SuiteListen -->
 </testng-results>
