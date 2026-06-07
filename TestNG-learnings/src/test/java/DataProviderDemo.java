@@ -59,7 +59,7 @@ public class DataProviderDemo {
 							{"abc@gmail.com", "test123"},
 							{"xyz@gmail.com", "test012"},
 							{"john@gmail.com", "test@123"},
-							{"pavanol123@gmail.com", "test@123"},
+							{"abc251@gmail.com", "abc251@gmail.com"},
 							{"johncanedy@gmail.com", "test"},
 				
 						};
