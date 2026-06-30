@@ -12,8 +12,8 @@ project-root
 ├── src
 │   ├── test
 │   │   ├── java
-│   │   │   └── (TestNG Java test classes and packages witth thier xmls)
-│   │   │
+│   │      └── (TestNG Java test classes and packages witth thier xmls)
+│   │   
 │   │   
 │   │      
 │
@@ -29,7 +29,7 @@ project-root
 
 ### src/test/java
 
-* Contains all TestNG test classes
+* Contains all TestNG test classes and packages with java classes and xmls
 * Covers:
 
   * Test methods using `@Test`
@@ -38,15 +38,7 @@ project-root
   * DataProviders
   * Listeners
 
-### src/test/resources
 
-* Contains TestNG XML files
-* Used for:
-
-  * Suite execution
-  * Grouping tests
-  * Parallel execution
-  * Listener configuration
 
 ### reports
 
@@ -56,65 +48,8 @@ project-root
 ---
 
 ## Test Execution
-
-### 1. Direct Execution (Java Files)
-
-* Almost all `.java` test files can be executed directly:
-
-  * Right-click → **Run As → TestNG Test**
-
-#### Exceptions:
-
-* **`MyListener.java`**
-
-  * Listener utility class (not a test)
-  * Used in `listenerbasics.xml`
-  * Can also be used without XML:
-
-    ```java
-    @Listeners(MyListener.class)
-    ```
-
-* **`Extentreportmanager.java`**
-
-  * Listener utility class for Extent Reports
-  * Used in `extentreport.xml`
-  * Can also be used without XML:
-
-    ```java
-    @Listeners(Extentreportmanager.class)
-    ```
-
-* **`ParalleltestingDemo.java`**
-
-  * Executed using:
-
-    ```
-    paralleldemo1.xml
-    ```
-  * Required for demonstrating parallel execution
-
----
-
-### 2. Execution Using XML Files
-
-* All `.xml` files in:
-
-  ```
-  src/test/resources
-  ```
-
-  can be executed directly:
-
-  * Right-click → **Run As → TestNG Suite**
-
-* Used for:
-
-  * Running multiple classes together
-  * Applying listeners
-  * Parallel execution
-  * Group execution
-
+- java classes in default package/no package can be run directly (run as testng)
+- packages containing xmls can be run through xml, run xml as testng
 ---
 
 ## Extent Reports
@@ -154,21 +89,6 @@ project-root
 * TestNG
 * Eclipse IDE
 * Maven (simple Maven project as a container for Testng Practice)
-
----
-
-## Key Notes
-
-* XML is **not mandatory** for running TestNG tests
-* Most test classes can run directly
-* XML is mainly used for:
-
-  * Advanced configuration
-  * Suite-level execution
-* Listeners can be configured:
-
-  * Via XML
-  * Or using `@Listeners` annotation in Java
 
 ---
 
