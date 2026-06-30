@@ -1,3 +1,4 @@
+package annotationsdemo;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -9,6 +10,16 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class AnnotationsTest {
+	
+	/*this class runs directly:- demonstrates Before and After testng annotations
+	 * like before and after method, class, test, suite 
+	 * 
+	 * order generally  beforesuite -> beforetest -> beforeclass -> beforemethod 
+	 * then the test with annotation @test, and post that after method, class, test, suite
+	 * also demonstrated attribute enabled=true very widely used
+	 * 
+	 * 
+	 * */
 	@Test
 	public void testMethod1() {
 		System.out.println("Test Method 1");

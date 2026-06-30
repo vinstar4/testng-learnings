@@ -4,7 +4,7 @@
 	<test thread-count="5" name="AnnoTest1" enabled="true">
 		<classes>
 
-			<class name="AnnotationsTest">
+			<class name="annotationsdemo.AnnotationsTest">
 				<methods>
 					<include name="testMethod1"></include>
 					<include name="testMethod2" ></include>

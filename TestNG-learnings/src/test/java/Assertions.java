@@ -8,6 +8,12 @@ public class Assertions {
 	@Test
 	public void TestGoogleAssert() throws Exception {
 		
+		/*
+		 * this file can be run directly, its to demonstrate Assertions
+		 * 
+		 * 
+		 * */
+		
 		WebDriver driver = new ChromeDriver();
 		//Assert basics.
 		//Other assertions like Assert.assertTrue/False/Null/notNull are popular
@@ -16,7 +22,7 @@ public class Assertions {
 	//	driver.findElement(By.name("q")).sendKeys("Hello Testng", Keys.ENTER);
 	//	System.out.println(driver.getCurrentUrl());
 		String actualURL= driver.getCurrentUrl();
-		String expectedURL="https://www.gooogle.com";
+		String expectedURL="https://www.google.com/";
 		Assert.assertEquals(actualURL, expectedURL,"failed");
 		//
 		Thread.sleep(1000);
