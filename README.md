@@ -12,10 +12,10 @@ project-root
 ├── src
 │   ├── test
 │   │   ├── java
-│   │   │   └── (TestNG Java test classes)
+│   │   │   └── (TestNG Java test classes and packages witth thier xmls)
 │   │   │
-│   │   └── resources
-│   │       └── (TestNG XML files)
+│   │   
+│   │      
 │
 ├── reports
 │   └── (Extent Report HTML files generated after execution)
